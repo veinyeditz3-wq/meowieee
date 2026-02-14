@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Valentine’s Day 💗</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap');
+
+body {
+margin: 0;
+min-height: 100vh;
+font-family: 'Poppins', sans-serif;
+background: radial-gradient(circle at top, #ffe4f0, #f8cdda, #fad0c4);
+overflow-x: hidden;
+}
+
+/* Floating hearts */
+.heart {
+position: fixed;
+bottom: -10px;
+color: rgba(255, 105, 180, 0.35);
+font-size: 20px;
+animation: floatUp 10s linear infinite;
+}
+@keyframes floatUp {
+0% { transform: translateY(0) scale(1); opacity: 1; }
+100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+}
+
+.container {
+max-width: 700px;
+margin: auto;
+padding: 30px 18px 60px;
+}
+
+.card {
+background: rgba(255, 255, 255, 0.55);
+backdrop-filter: blur(18px);
+border-radius: 28px;
+padding: 28px 22px 35px;
+box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+animation: fadeIn 1.4s ease;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 34px;
+margin-bottom: 25px;
+color: #b03060;
+}
+
+.photo-block {
+margin-bottom: 35px;
+}
+
+.photo-block img {
+width: 100%;
+border-radius: 22px;
+box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+transition: transform 0.6s ease;
+}
+.photo-block img:hover {
+transform: scale(1.02);
+}
+
+.caption {
+margin-top: 14px;
+font-size: 16.5px;
+line-height: 1.7;
+color: #444;
+}
+
+.signature {
+margin-top: 10px;
+font-weight: 400;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- floating hearts -->
+<script>
+for(let i=0;i<18;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤";
+h.style.left=Math.random()*100+"vw";
+h.style.fontSize=14+Math.random()*20+"px";
+h.style.animationDuration=8+Math.random()*6+"s";
+document.body.appendChild(h);
+}
+</script>
+
+<div class="container">
+<div class="card">
+
+<h1>Happy Valentine’s Day, lovee 💗</h1>
+
+<div class="photo-block">
+<img src="pic1.jpeg">
+<p class="caption">
+Well, as you don’t have any plans,<br>
+I thought about this just to make you happy…<br>
+because I see my happiness in you.
+</p>
+</div>
+
+<div class="photo-block">
+<img src="pic2.png">
+<p class="caption">
+I’m literally blessed by having you in my life.<br>
+You don’t even know how much you mean to me.YOU'RE MY EVERYTHING
+</p>
+</div>
+
+<div class="photo-block">
+<img src="pic3.jpeg">
+<p class="caption signature">
+No matter whatever I say, I do, and I will —<br>
+I will always love you the most, <b>bille</b> 🤍
+</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
